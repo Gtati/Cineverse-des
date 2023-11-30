@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cineverse</title>
+</head>
+
+<body>
+    <section class="header2">
+
+        <div class="menu-container">
+            <a href="#" class="logo">Cineverse</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="peliculas.html">Peliculas</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li>
+                        <a href="#">Categorias</a>
+                        <ul class="menu-vertical">
+                            <li><a href="Accion.html">Accion</a></li>
+                            <li><a href="Terror.html">Terror</a></li>
+                            <li><a href="Ciencia-Ficcion.html">Ciencia Ficcion</a></li>
+                            <li><a href="Suspenso.html">Suspenso</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1"></a>
+        </div>
+
+        <input type="text" placeholder="Buscar peliculas o series" class="int1" id="searchInput">
+
+    </section>
+
+    <section class="all">
+
+        <h2 class="titleMovies"> peliculas en estreno</h2>
+        <div class="container">
+         <div class="contentMovie">  
+        <div class="movie">
+            <img src="img/2.jpg">
+            <p class="texto-oculto"> Thor está buscando la paz interior, pero la irrupción de Gorr, el asesino de dioses, le
+              obliga a volver al combate. Thor recluta a la Reina Valkiria, Korg y su exnovia, Jane Foster, para que lo
+              ayuden a evitar la extinción de los dioses.</p>
+            
+            <button class="open-modal" onclick="openModal('ZaD7iZR0-5w')"><h3>Thor, love and thunder</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(7, 44, 61);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+    </div> 
+        <div class="movie">
+            <img src="img/3.jpg">
+            <p class="texto-oculto">Thor es desterrado a Sakaar, un planeta de gladiadores, por su hermana Hela, la Diosa de la Muerte. Thor debe encontrar la manera de escapar y regresar a Asgard para detener a Hela de destruir el reino.</p>
+            
+            <button class="open-modal" onclick="openModal('Cdp7Xo0x0Uw')"><h3>Thor, Ragnarok</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560
+                    " height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+        <div class="movie">
+            <img src="img/4.jpg">
+            <p class="texto-oculto">En 1998, la ciudad de Raccoon City, hogar de la Corporación Umbrella, es invadida por zombis. Un grupo de supervivientes, entre ellos Claire Redfield y Chris Redfield, deben luchar para escapar y descubrir la verdad detrás de la Umbrella Corporation.</p>
+            
+            <button class="open-modal" onclick="openModal('RYeF9E1g_xU')"><h3>Resident Evil</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/5.jpg">
+            <p class="texto-oculto">En un mundo donde la inmortalidad es un secreto, un grupo de mercenarios liderados por Andy (Charlize Theron) llevan siglos luchando por proteger a la humanidad. Nile (Kiki Layne) es una nueva recluta que descubre su inmortalidad durante una misión. Cuando sus identidades se descubren, el grupo debe luchar para proteger su libertad de aquellos que buscan aprovecharse de ellos.</p>
+            <button class="open-modal" onclick="openModal('OCDhMOrCEoc')"><h3>La vieja guardia</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+           
+        </div>       
+
+        <div class="movie">
+            <img src="img/6.jpg">
+            <p class="texto-oculto">La película sigue a un equipo de soldados de élite de las fuerzas especiales que son enviados a investigar una serie de extraños ataques en una ciudad devastada por la guerra en Europa del Este. Pronto descubren que los ataques están siendo llevados a cabo por un grupo de seres misteriosos y poderosos conocidos como espectros.</p>
+            
+            <button class="open-modal" onclick="openModal('WBz5KyUhIMQ')"><h3>Spectral</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+        
+        <div class="movie">
+            <img src="img/7.jpg">
+            <p class="texto-oculto">El general ateniense Temístocles intenta unir a las ciudades-estado griegas para poder derrotar a las poderosas fuerzas invasoras persas, guiadas por el rey Jerjes y por Artemisia, la vengativa comandante de la armada persa.</p>
+            <button class="open-modal" onclick="openModal('i14coKhHnl0')"><h3>300 El origen de un imperio</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/8.jpg">
+            <p class="texto-oculto">Las vidas de un exsoldado, una adolescente y un policía se cruzan en Nueva Orleans mientras buscan al suministrador de una pastilla que otorga superpoderes temporales.</p>
+            
+            <button class="open-modal" onclick="openModal('T-wJ7EYAIPI')"><h3>Project Power</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/9.jpg">
+            <p class="texto-oculto">Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady.</p>
+            
+            <button class="open-modal" onclick="openModal('wfjlNisONJY')"><h3>Venom: Carnage liberado</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/10.jpg">
+            <p class="texto-oculto">El periodista Eddie Brock intenta desenmascarar al genio científico Carlton Drake, el célebre fundador de la Fundación Vida. Mientras investiga uno de los experimentos de Drake, Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.</p>
+            
+            <button class="open-modal" onclick="openModal('nZ8FXOpcXSs')"><h3>Venom</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/11.jpg">
+            <p class="texto-oculto">Por primera vez en la historia cinematográfica de Spider-Man, nuestro héroe, vecino y amigo es desenmascarado y por tanto ya no es capaz de separar su vida normal de los enormes riesgos que conlleva ser un Súper Héroe. Cuando pide ayuda a Doctor Strange, los riesgos pasan a ser aún más peligrosos, obligándole a descubrir lo que realmente significa ser Spider-Man.</p>
+            
+            <button class="open-modal" onclick="openModal('ldMn-1iQzKE')"><h3>Spiderman, No way home</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+ <!-- --------- -->
+ <div class="movie">
+  <img src="img/14.jpg">
+  <p class="texto-oculto">Tras la guerra termonuclear que ha convertido a la Tierra en un páramo, el antiguo policía Max Rockatansky, atormentado por los espíritus de aquellos a los que no pudo proteger, se ha convertido en un hombre con un solo instinto: sobrevivir. Sin embargo, se ve arrastrado a formar parte de un grupo que huye a través del desierto en un War Rig. Enfurecido, el Señor de la Guerra moviliza a todas sus bandas y persigue implacablemente a Max</p>
+  
+  <button class="open-modal" onclick="openModal('hEJnMQG9ev8')"><h3>Mad Max</h3></button>
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+        <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</div> 
+
+<div class="movie">
+  <img src="img/20.jpg">
+  <p class="texto-oculto">En su segundo año luchando contra el crimen, Batman explora la corrupción existente en la ciudad de Gotham y el vínculo de esta con su propia familia. Además, entrará en conflicto con un asesino en serie conocido como "el Acertijo".</p>
+  
+  <button class="open-modal" onclick="openModal('fWQrd6cwJ0A')"><h3>Batman</h3></button>
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+        <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</div> 
+
+<div class="movie">
+  <img src="img/23.jpg">
+  <p class="texto-oculto">Una peligrosa conspiración, relacionada con su pasado, persigue a Natasha Romanoff, también conocida como Viuda Negra. La agente tendrá que lidiar con las consecuencias de haber sido espía, así como con las relaciones rotas, para sobrevivir</p>
+  
+  <button class="open-modal" onclick="openModal('ybji16u608U')"><h3>Black Widow</h3></button>
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+        <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</div> 
+
+<div class="movie">
+  
+  <img src="img/24.jpg">
+  <p class="texto-oculto">Unos arqueólogos liberan de su tumba a Black Adam, quien llevaba 5000 años preso tras haber recibido los poderes de los dioses. De nuevo entre los humanos, Black Adam se dispone a imponer su justicia, muy diferente a la del mundo en el que despertó.</p>
+
+
+  <button class="open-modal" onclick="openModal('a1mcS4tKGNg')">
+      <h3>Black Adam</h3>
+  </button>
+
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+          <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+          <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+      </div>
+  </div>
+</div> 
+
+<div class="movie">
+  <img src="img/22.jpg">
+  <p class="texto-oculto">El Imperio va a construir una estación espacial capaz de destruir planetas, conocida como la Estrella de la Muerte. Los rebeldes se embarcan en una misión extraordinaria: robar los planos y sabotear la estación.</p>
+  
+  <button class="open-modal" onclick="openModal('Xcs4OpUJWrM')"><h3>Star Wars: Rogue One</h3></button>
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+        <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</div> 
+<div>
+
+
+
+    </section>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
