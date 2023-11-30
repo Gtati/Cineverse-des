@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cineverse</title>
+</head>
+
+<body>
+  <section class="header2">
+
+    <div class="menu-container">
+      <a href="#" class="logo">Cineverse</a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+        <img src="img/menu.png" class="menu-icono" alt="menu">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="peliculas.html">Peliculas</a></li>
+          <li><a href="series.html">Series</a></li>
+          <li>
+            <a href="#">Categorias</a>
+            <ul class="menu-vertical">
+              <li><a href="">Accion</a></li>
+              <li><a href="">Terror</a></li>
+              <li><a href="">Ciencia Ficcion</a></li>
+              <li><a href="">Misterio</a></li>
+              <li><a href="">Comedia</a></li>
+              <li><a href="">Romance</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-1">Login</a>
+    </div>
+
+    <input type="text" placeholder="Buscar peliculas o series" class="int2">
+
+  </section>
+
+  <section class="all">
+
+    <h2 class="titleMovies"> peliculas en estreno</h2>
+    <div class="container">
+      <div class="contentMovie">
+        <div class="movie">
+          <img src="img/2.jpg">
+          <p class="texto-oculto">Thor, hijo de Odín, está atrapado en la guarida del gigante de fuego Surtur, destinado
+            a acabar con Asgard según la profecía del Ragnarok. Tras escapar de Surtur, y aparentemente acabar con el
+            peligro, Thor regresa a Asgard, donde un nuevo enemigo acecha</p>
+
+          <button class="open-modal" onclick="openModal('ZaD7iZR0-5w')">Thor, love and thunder</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content" style="background-color: rgb(7, 44, 61);">
+              <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="movie">
+
+        <img src="img/3.jpg">
+        <p class="texto-oculto"> Thor está buscando la paz interior, pero la irrupción de Gorr, el asesino de dioses, le
+          obliga a volver al combate. Thor recluta a la Reina Valkiria, Korg y su exnovia, Jane Foster, para que lo
+          ayuden a evitar la extinción de los dioses.</p>
+
+        <button class="open-modal" onclick="openModal('Cdp7Xo0x0Uw')">Thor, Ragnarok</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="img/4.jpg">
+        <p class="texto-oculto"> Thor, hijo de Odín, está atrapado en la guarida del gigante de fuego Surtur, destinado
+          a acabar con Asgard según la profecía del Ragnarok. Tras escapar de Surtur, y aparentemente acabar con el
+          peligro, Thor regresa a Asgard, donde un nuevo enemigo acecha.</p>
+
+        <button class="open-modal" onclick="openModal('RYeF9E1g_xU')">Resident Evil</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movie">
+        <img src="img/5.jpg">
+        <p class="texto-oculto"> Un grupo de mercenarios inmortales y con la capacidad de curarse a sí mismos, descubren
+          que alguien sabe su secreto y deben luchar para proteger su libertad.</p>
+        <button class="open-modal" onclick="openModal('OCDhMOrCEoc')">La vieja guardia</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="movie">
+        <img src="img/6.jpg">
+        <p class="texto-oculto"> Una fuerza sobrenatural ataca a la ciudad de Nueva York, devastada por la guerra. Un
+          equipo de fuerzas especiales se prepara para detener a la terrible amenaza.</p>
+        <button class="open-modal" onclick="openModal('WBz5KyUhIMQ')">Spectral</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movie">
+        <img src="img/7.jpg">
+        <p class="texto-oculto"> Segunda Guerra Médica. El general ateniense Temístocles intenta unir a las
+          ciudades-estado griegas para poder derrotar a las poderosas fuerzas invasoras persas, guiadas por el rey
+          Jerjes y por Artemisia, la vengativa comandante de la armada persa.</p>
+        <button class="open-modal" onclick="openModal('i14coKhHnl0')">300 El origen de un imperio</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="movie">
+        <img src="img/8.jpg">
+        <p class="texto-oculto"> Las vidas de un exsoldado, una adolescente y un policía se cruzan en Nueva Orleans
+          mientras buscan al suministrador de una pastilla que otorga superpoderes temporales.</p>
+
+        <button class="open-modal" onclick="openModal('T-wJ7EYAIPI')">Project Power</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movie">
+        <img src="img/9.jpg">
+        <p class="texto-oculto"> El periodista Eddie Brock intenta desenmascarar al genio científico Carlton Drake, el
+          célebre fundador de la Fundación Vida. Mientras investiga uno de los experimentos de Drake, Brock establece
+          una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y
+          lo vuelve perverso.</p>
+
+        <button class="open-modal" onclick="openModal('wfjlNisONJY')">Venom: Carnage liberado</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movie">
+        <img src="img/10.jpg">
+        <p class="texto-oculto"> El periodista Eddie Brock intenta desenmascarar al genio científico Carlton Drake, el
+          célebre fundador de la Fundación Vida. Mientras investiga uno de los experimentos de Drake, Brock establece
+          una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y
+          lo vuelve perverso.</p>
+
+        <button class="open-modal" onclick="openModal('nZ8FXOpcXSs')">Venom</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movie">
+        <img src="img/11.jpg">
+        <p class="texto-oculto"> Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del
+          joven se vuelve una locura. Peter le pide ayuda al Doctor Strange para recuperar su vida, pero algo sale mal y
+          provoca una fractura en el multiverso.</p>
+
+        <button class="open-modal" onclick="openModal('ldMn-1iQzKE')">Spiderman, No way home</button>
+        <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
