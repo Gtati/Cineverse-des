@@ -60,7 +60,7 @@ body{
 }
 
 .navbar ul li a{
-    font-size: 22px;
+    font-size: 25px;
     padding: 14px;
     color: #ffff;
     display: block;
@@ -76,6 +76,7 @@ body{
     list-style: none;
     background-color: #212427;
 }
+
 
 .navbar li:hover .menu-vertical{
     display: block;
@@ -135,15 +136,17 @@ body{
     border-radius: 3rem;
 }
 .btn-2{
-    width: 110px;
+    width: 140px;
     display: inline-block;
-    padding: 7px 20px;
+    padding: 8px 20px;
     background-color: #77abe7;
     color: #ffff;
     font-size: 20px;
     margin-top: 25px;
-    margin-left: 7rem;
+    margin-left: 6rem;
     border-radius: 3rem;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .peliculas-recomendadas {
@@ -365,28 +368,14 @@ form {
 }
 
 .int2 {
-    background-color:rgba(8, 8, 8, 0.4);
+    text-align: center;
+   width: 50%;
+   margin: auto;
+   background-color:rgba(8, 8, 8, 0.8);
     color: #fff;
     border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    width: 30rem;
-    top: 6rem;
-    border: 3px solid black;
-    margin-left: 3rem;
-    position: absolute;
-    display: flex;   
-    z-index: 2;
-}
-
-.min-img {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
-    top: -7rem;
-    left: 2rem;
-    opacity: 0.8;
+    padding: 1rem;
+    border: 3px solid white;
 }
 
 .container2 {
@@ -419,9 +408,14 @@ h1 {
     text-align: center;
 }
 
+.descripcion{
+    color: black;
+}
+
 @media (max-width: 768px) {
     .pelicula{
         padding: 0;
+    }
     }
 
 @media (max-width: 991px){
@@ -487,6 +481,7 @@ h1 {
         width: 25rem;
         margin-left: 2.3rem ;
     }
+}
 
 @media (max-width: 440px){
     .int1{
@@ -527,6 +522,8 @@ h1 {
 .pelicula:hover .portfolio-layer{
     transform: translateY(0);
 }
+
+
 
 .sectionC-movies {
     width: 100%;
@@ -594,7 +591,6 @@ h1 {
         margin-top: 9rem;
         font-size: 3rem;
 }
-
 
 #ventanaEmergentes {
     display: none;
@@ -714,11 +710,6 @@ h1 {
   .imagen-with-text:hover .text-overlay {
     opacity: 1;
   }
-
-.titulo{
-  color: #ffb803;
-  margin: 10px;
-}
 
 @media (max-width: 768px) {
     .pelicula{
@@ -898,7 +889,7 @@ h1 {
     display: none;
 }
 
-/* .container-modal{
+.container-modal{
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -909,7 +900,7 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 1;
-} */
+}
 
 #btn-modal:checked ~ .container-modal {
     display: flex;
@@ -955,10 +946,34 @@ h1 {
   }
 
   .movie{
-display: flex;
-flex-direction: column;
-align-items: center;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    
+    
+ }
+
+ .texto-oculto {
+   background-color: rgba(21, 18, 47, 0.8);
+   height: 65%;
+   padding: 3rem 1rem;
+   width: 100%;    
+   position: absolute;    
+   opacity: 0;
+   transition: 0.7s;
+   top: 8rem;
+    
+    
+ }
+
+ .texto-oculto:hover{
+   top: 3rem;
+   opacity: 1;
+   font-size: 1rem;
+ }
 
 .content-modal{
     width: 70rem;
@@ -999,3 +1014,36 @@ align-items: center;
     background: linear-gradient(#bf4f68, #3b223f);;
 }
 
+@media (max-width: 480px){
+    .int1{
+        width: 20rem;
+        margin-left: 2rem ;
+        margin-bottom: 2rem;
+    }
+    
+#video {
+    width: 75vw;
+}
+   
+.modal-content{
+    width: 95%;
+}
+
+}
+
+@media (max-width: 520px){
+    .int1{
+        width: 20rem;
+        margin-left: 2rem ;
+        margin-bottom: 2rem;
+    }
+    
+#video {
+    width: 75vw;
+}
+   
+.modal-content{
+    width: 95%;
+}
+
+}
