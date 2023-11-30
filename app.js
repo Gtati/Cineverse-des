@@ -121,7 +121,9 @@ function verVideo(imagen) {
 		});
 	}
 	
-	function openModal(videoId) {
+// ? ----- ----- Modal ----- -----
+
+function openModal(videoId) {
     var modal = document.getElementById("myModal");
     var video = document.getElementById("video");
     video.src = "https://www.youtube.com/embed/" + videoId;
@@ -154,3 +156,5 @@ function verVideo(imagen) {
         });
     }
 });
+  
+
