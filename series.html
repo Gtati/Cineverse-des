@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Series</title>
+    <title>Cineverse</title>
 </head>
+
 <body>
-    <section class="container2">
+    <section class="header3">
         <div class="menu-container">
             <a href="#" class="logo">Cineverse</a>
             <input type="checkbox" id="menu" />
@@ -22,65 +23,238 @@
                     <li>
                         <a href="#">Categorias</a>
                         <ul class="menu-vertical">
-                            <li><a href="">Accion</a></li>
-                            <li><a href="">Terror</a></li>
-                            <li><a href="">Ciencia Ficcion</a></li>
-                            <li><a href="">Misterio</a></li>
-                            <li><a href="">Comedia</a></li>
-                            <li><a href="">Romance</a></li>
+                          
+                            <li><a href="Accion.html">Accion</a></li>
+                            <li><a href="Terror.html">Terror</a></li>
+                            <li><a href="Ciencia-Ficcion.html">Ciencia Ficcion</a></li>
+                            <li><a href="Suspenso.html">Suspenso</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <a href="#" class="btn-1">Login</a>
+            <a href="#" class="btn-1"></a>
         </div>
 
-        <input type="text" placeholder="Peliculas , series o personajes" class="int2">
+        <input type="text" placeholder="Buscar peliculas o series" class="int1" id="buscador">
+
     </section>
-    
-    <br>
-    <h1>Series Recomendadas</h1>
-    <br>
 
-    <div class="image-grid">
-        <div class="row">
-            <a href="#"><img src="img2/betaal.jpeg" alt="" class="imagenes"></a>
+    <section class="all">
+
+        <h2 class="titleMovies"> series en estreno</h2>
+        <div class="container">
+         <div class="contentMovie">  
+        <div class="movie">
+            <img src="img2/betaal.jpeg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('YSEVaVc-nOo')"><h3>Beetal</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(7, 44, 61);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+    </div> 
+        <div class="movie">
+            <img src="img2/bloodride.jpeg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('Kc4dbxQ-mEM')">Bloodride</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+        <div class="movie">
+            <img src="img2/curon.jpeg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('w_EaVne6uVM')">Curon</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img2/detention la serie.jpeg" class="imgg">
+            <button class="open-modal" onclick="openModal('OD04DDTAr04I')">Detention</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+           
+        </div>       
+
+        <div class="movie">
+            <img src="img/Game-of-thrones-series-tv-poster-720x1080.png" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('KPLWWIOCOOQ')">Game of Thrones</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+        
+        <div class="movie">
+            <img src="img/squid game.png" class="imgg">
+            <button class="open-modal" onclick="openModal('Mj4_xG5NXeo')">El Juego del Calamar</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            
+        </div>       
+
+        <div class="movie">
+            <img src="img/Breaking-bad-series-tv-alternative-poster-762x1080.jpg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('HhesaQXLuRY')"><h3>Breaking Bad</h3></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img2/ju-on origenes.jpeg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('MJqHpN9b0U4')">Ju-on origenes</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img/american_horror_story_ver11.png" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('Bn36TTvPYK0')">American Horror Story</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+        </div>       
+
+        <div class="movie">
+            <img src="img2/mostros de cracovia.jpeg" class="imgg">
+            
+            <button class="open-modal" onclick="openModal('3yO-SQY_goU')">Mounstruos de Cracovia</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                  <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                  <div class="video-container">
+                    <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
         </div>
-        <div class="series">
-            <a href="#"><img src="img2/bloodride.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/curon.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/detention la serie.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/el huesped sobrenatural.jpeg" alt="" class="imagenes"></a>
-        </div><div class="series">
-            <a href="#"><img src="img2/Ghost-Wars.jpg" alt="" class="imagenes"></a>
-        </div><div class="series">
-            <a href="#"><img src="img2/haunted.jpg" alt=" " class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/ju-on origenes.jpeg" alt="" class="imagenes"></a>
-        </div><div class="series">
-            <a href="#"><img src="img2/misa de medianoche.jpeg" alt="" class="imagenes"></a>
-        </div><div class="series">
-            <a href="#"><img src="img2/mostros de cracovia.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/nuevo sabor a cereza.jpeg" alt="" class="imagenes"></a>
-        </div><div class="series">
-            <a href="#"><img src="img2/paranormal.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/requiem.jpeg" alt="" class="imagenes"></a>
-        </div>
-        <div class="series">
-            <a href="#"><img src="img2/school tales.jpeg" alt=" "class="imagenes"></a>
-        </div>
+        
+        <div class="movie">
+          <img src="img/19.jpg" class="imgg">
+          
+          <button class="open-modal" onclick="openModal('R2oA59hYN_Y')">Wanda Vision</button>
+          <div id="myModal" class="modal">
+              <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+                <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+                <div class="video-container">
+                  <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
       </div>
 
+      <div class="movie">
+        <img src="img/loki-marvel-serie-poster.png" class="imgg">
+        
+        <button class="open-modal" onclick="openModal('KcBStos46EM')">Loki</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+              <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+              <div class="video-container">
+                <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="movie">
+      <img src="img/you-serie-netflix-poster.png" class="imgg">
+      
+      <button class="open-modal" onclick="openModal('sKnILnd7HuU')">You</button>
+      <div id="myModal" class="modal">
+          <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+            <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+            <div class="video-container">
+              <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <div class="movie">
+    <img src="img/The-mandalorian-series-tv-poster-disney-729x1080.png" class="imgg">
+    
+    <button class="open-modal" onclick="openModal('aOC8E8z_ifw')">The Mandalorian</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+          <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+          <div class="video-container">
+            <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="movie">
+  <img src="img/Stranger-things-series-tv-poster-netflix-729x1080.png" class="imgg">
+  
+  <button class="open-modal" onclick="openModal('x7Yq9MJUqjY')">Stranger Things</button>
+  <div id="myModal" class="modal">
+      <div class="modal-content" style="background-color: rgb(48, 45, 45);">
+        <span class="close" style="color:white;" onclick="closeModal()">&times;</span>
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+</div>
+
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>

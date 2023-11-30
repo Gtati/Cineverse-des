@@ -60,6 +60,67 @@ fila.addEventListener('mouseleave', () => {
 });
 
 
+function verVideo(imagen) {
+	// Obtenemos la URL del video
+	var videoURL = imagen.getAttribute("data-video-url");
+  
+	// Obtenemos el elemento de video
+	var video = document.querySelector("video");
+  
+	// Si el elemento de video no existe, lo creamos
+	if (!video) {
+	  video = document.createElement("video");
+	  video.setAttribute("controls", "controls");
+  
+	  document.body.appendChild(video);
+	}
+  
+	// Asignamos la URL del video al elemento de video
+	video.src = videoURL;
+  
+	// Iniciamos la reproducción del video
+	video.play();
+  }
+	function removeAccentsAndLowerCase(string) {
+		return string.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+	}
+	
+	document.addEventListener("keyup", (e) => {
+		if (e.target.matches("#buscador")) {
+			if (e.key === "Escape") e.target.value = "";
+			
+	
+			const searchTerm = removeAccentsAndLowerCase(e.target.value);
+	
+			document.querySelectorAll(".carousel").forEach((movie) => {
+				const titleElement = movie.querySelector("h3");
+				if (titleElement) {
+					const movieTitle = removeAccentsAndLowerCase(titleElement.textContent);
+	
+					if (movieTitle.includes(searchTerm)) {
+						movie.classList.remove("filtro");
+						document.querySelectorAll(".open-modal").forEach((modalButton) => {
+							modalButton.style.display = "none";
+						});
+					}        
+					else {
+						movie.classList.add("filtro");
+						modalButton.style.display = "";
+	
+					}
+				}
+			});
+		}
+	});
+	
+	
+	
+	if (!searchTerm) {
+		document.querySelectorAll(".open-modal").forEach((modalButton) => {
+			modalButton.style.display = "none";
+		});
+	}
+	
 // ? ----- ----- Modal ----- -----
 
 function openModal(videoId) {
@@ -75,3 +136,25 @@ function openModal(videoId) {
     video.src = "";
     modal.style.display = "none";
   }
+
+  document.addEventListener("keyup", e => {
+    if (e.target.matches("#buscador")) {
+        if (e.key === "Escape") e.target.value = "";
+
+        document.querySelectorAll(".movie").forEach(movie => {
+            const title = movie.querySelector("h3");
+            const image = movie.querySelector("img");
+            const isMatch = title.textContent.toLowerCase().includes(e.target.value.toLowerCase());
+
+            if (isMatch) {
+                movie.style.display = "block"; // Mostrar el div .movie si hay coincidencia
+                image.style.display = "block"; // Mostrar la imagen
+            } else {
+                movie.style.display = "none";  // Ocultar el div .movie si no hay coincidencia
+                image.style.display = "none";  // Ocultar la imagen
+            }
+        });
+    }
+});
+  
+
